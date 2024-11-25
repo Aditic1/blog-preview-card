@@ -1,0 +1,137 @@
+/* Font Definitions */
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800; /* ExtraBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+    font-weight: 600; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/static/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/static/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400; 
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    line-height: 1.5;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', Arial, sans-serif; 
+    font-weight: 400; 
+}
+
+/* Container */
+.container {
+    width: 340px;
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 18px;
+    border: 0.5px solid black;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 10px 5px 2px black; 
+    justify-content: space-evenly;
+}
+
+#imageContainer {
+    height: 160px;
+    width: 100%;
+    background-image: url("./assets/images/illustration-article.svg"); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 10px; 
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+#Tag {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: black;
+    background-color: hsl(47, 88%, 63%);
+    height: 30px;
+    width: fit-content; 
+    padding:8px;
+    margin: 10px 0px; 
+    font-family: 'Figtree', sans-serif;
+    font-weight: 900; 
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#Published {
+    font-size: 0.8rem;
+    color: rgb(17, 17, 17);
+    font-family: 'Figtree', sans-serif; /* Apply custom font */
+    font-weight: 600; 
+}
+
+#Title {
+    font-size: 24px;
+    font-weight: 900; 
+    color: black;
+    font-family: 'Figtree', sans-serif;
+    text-decoration: none;
+}
+
+#Title:hover{
+    color:yellow;
+}
+p {
+    padding: 4px;
+    font-size: 14px;
+    color: rgba(107, 107, 107,0.9);
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600; 
+}
+
+#Avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 15px; 
+}
+
+#Avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+#Avatar span {
+    font-size: 1rem;
+    color: #111;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700; 
+}
